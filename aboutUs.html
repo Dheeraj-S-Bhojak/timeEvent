@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>page 2</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Block Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div>
+                <h4>Name:-  </h4><p id="userNameTextS"></p>
+                <h4>Email:- </h4><p id="userEmail"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 box">
+                <p id="firstPtagText"></p>
+            </div>
+            <div class="col-md-4 boxCenter">
+                <p id="p2Tag"></p>
+            </div>
+    
+            <div class="col-md-4  box">
+                <p id="p3Tag"></p>
+            </div>
+        </div>
+    </div>
+    
+ 
+
+
+<script>
+    setTimeout(() => {
+        showAboutUs.sendName();
+        showAboutUs.sendEmail();
+         setTimeout(() => {
+            showAboutUs.ptagsfirst();
+            setTimeout(() => {
+                 showAboutUs.ptagssecond();
+                 setTimeout(() => {
+                    showAboutUs.ptagsthrid();
+                }, 1000);
+             }, 1000);
+        }, 2000);
+    }, 3000);
+</script>
+<script>
+      count = 0;
+    function stopingInterval(){
+      
+            count++;
+            console.log(count);
+            if (count == 10) {
+                clearInterval(stopPTagINterval);
+                showAboutUs.ourLocation();
+            } 
+
+    };
+    const stopPTagINterval = setInterval(() => {
+        stopingInterval();
+        showAboutUs.randomTextPicker();
+        showAboutUs.randomTextPickertwo();
+        showAboutUs.randomTextPickerthree();
+    }, 2000);
+   
+
+</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

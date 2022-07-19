@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign-In</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Block Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="col-md-12">
+            <form id="form8" class="d-none" >
+                <fieldset>
+                    <legend>Form </legend>
+                    <div class="form-group">
+                        <label for="inputName" class="form-label mt-4">Email address</label>
+                        <input type="email" class="form-control" id="inputName" 
+                            placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail" class="form-label mt-4">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="form-label mt-4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder = "Password" onblur = "formDetails.validateForm();">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById('form8').classList.remove('d-none');
+        }, 3000);
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

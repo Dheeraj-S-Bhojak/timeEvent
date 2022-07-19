@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>page 3</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Block Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row mt-6">
+            <div class="col-md-5 mt-5">
+                <img src="/images/maxresdefault.jpg" id="showimage" class="d-none">
+            </div>
+            <div class="col-md-7">
+                <p id="showText" class="d-none" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt itaque consequuntur eius ab in eligendi officiis quam voluptatibus cupiditate maiores laborum ratione magnam voluptates nostrum fugiat minima, minus amet quis numquam ad sunt id nisi ducimus? Labore atque laborum minima laudantium assumenda voluptates sequi temporibus, veniam aliquam. Velit pariatur soluta voluptatibus impedit corrupti eum repellat ut provident modi harum!</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+<script>
+    
+    setTimeout(() => {
+        document.getElementById('showimage').classList.remove('d-none');
+        document.getElementById('showText').classList.remove('d-none');
+    
+    }, 3000);
+
+    setTimeout(() => {
+          showAboutUs.bigImagePage();
+    }, 10000);
+</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
